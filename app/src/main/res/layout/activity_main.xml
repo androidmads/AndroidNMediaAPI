@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidmads.androidnfileurisample.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toTopOf="@+id/imgPath"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/imgPath"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="61dp"
+        android:text="Image Path"
+        app:layout_constraintBottom_toTopOf="@+id/btnGallery"
+        app:layout_constraintEnd_toEndOf="@+id/btnCapture"
+        app:layout_constraintTop_toBottomOf="@+id/imgPreview" />
+
+    <Button
+        android:id="@+id/btnCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="14dp"
+        android:text="Camera"
+        app:layout_constraintStart_toStartOf="@+id/btnOpenImg"
+        app:layout_constraintTop_toBottomOf="@+id/imgPath"
+        android:layout_marginLeft="9dp" />
+
+    <Button
+        android:id="@+id/btnGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallery"
+        app:layout_constraintBottom_toTopOf="@+id/btnOpenImg"
+        app:layout_constraintStart_toStartOf="@+id/btnCapture"
+        app:layout_constraintTop_toBottomOf="@+id/imgPath" />
+
+    <Button
+        android:id="@+id/btnOpenImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="184dp"
+        android:text="Open Image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGallery" />
+
+</android.support.constraint.ConstraintLayout>
